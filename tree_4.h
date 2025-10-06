@@ -1,3 +1,10 @@
+#ifndef TREE_H
+#define TREE_H
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
 #include <stdlib.h>
 
 typedef int Data;
@@ -11,6 +18,6 @@ struct Node {
 
 Node* tree_add(Node* tree, Data x);
 void tree_print(Node* tree);
-void tree_destroy(Node* tree);
+Node* tree_destroy(Node* tree);
 
 #endif
